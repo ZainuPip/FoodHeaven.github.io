@@ -17,7 +17,7 @@ if(num==1){
   }
   return bg;
   }
-  bg:bg();
+  bg:bgR();
   fg          : 'images/Scrath Image.jpg',  // Foreground (image path or hex color).
   realtime    : true,       // Calculates percentage in realitime.
   scratchDown : null,       // Set scratchDown callback.
