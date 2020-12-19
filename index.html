@@ -10,11 +10,28 @@
 			integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
 			crossorigin="anonymous">
 		</script>
+		<script>
+		function clickCounter() {
+  if(typeof(Storage) !== "undefined") {
+    if (sessionStorage.clickcount) {
+      sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+    } else {
+      sessionStorage.clickcount = 1;
+    }
+	if(sessionStorage.clickcount>=2){
+	
+    document.getElementById("card").innerHTML ='images/offer expire.jpg';
+	}
+  } 
+  else {
+    document.getElementById("card").innerHTML = "Sorry, your browser does not support web storage...";
+  }
+		</script>
 		<script src="./app.js" defer></script>
 		<script src="./wscratchpad.min.js"></script>
 		
 	</head>
-	<body>
+	<body onload="clickCounter()">
 		<div id="container"> 
 			<div id="card">
 			</div>
