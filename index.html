@@ -4,15 +4,17 @@
 		<meta charset="UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<title>Food Heaven</title>
-		<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+		<link rel="icon" href="image/Logo.png" type="image/x-icon" />
 		<link rel="stylesheet" href="style.css" />
 		<script 
 			src="https://code.jquery.com/jquery-2.2.4.min.js"
 			integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
 			crossorigin="anonymous">
+			
 		</script>
 		<script>
-		function clickCounter() {
+		
+			function clickCounter() {
   if(typeof(Storage) !== "undefined") {
     if (sessionStorage.clickcount) {
       sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
@@ -20,24 +22,31 @@
       sessionStorage.clickcount = 1;
     }
 	if(sessionStorage.clickcount>=2){
-		
-	document.getElementById("card").innerHTML = "<img src='images/offer expire.jpg' width=400px; height=450px;/>";
-    
+	
+    document.getElementById("card").innerHTML = "<img src='images/offer expire.jpg' width=100% 100%; height=100% 100%;/>";
 	}
   } 
   else {
     document.getElementById("card").innerHTML = "Sorry, your browser does not support web storage...";
   }
 }
+
 		</script>
 		<script src="./app.js" defer></script>
 		<script src="./wscratchpad.min.js"></script>
 		
+		
 	</head>
 	<body onload="clickCounter()">
+	<!-- <p><button type="button" onclick="clickCounter()">click me</button> -->
 		<div id="container"> 
 			<div id="card">
 			</div>
 		</div>
+		
+		
+		
+		
+		<footer></footer>
 	</body>
 </html>
