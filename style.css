@@ -6,12 +6,13 @@ body{
 }
 
 #container{
-	width: inherit;
-	height: inherit;
+	width: 25% 25%;
+	height: 25% 25%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border-radius: 50% 50%;
+	border-radius: 50%;
+	
 }
 
 #card{
@@ -19,14 +20,48 @@ body{
 	height: 450px;
 	position: relative;
 	user-select:none;
-	border-radius: 50% 50%;
+	border-radius: 50%;
 }
 
 img.canvas{
-	border-radius: 50%;
+	border-radius: 50% 50%;
 	
 }
 
 card:active{
 	transform: scale(1.05);
+}
+
+#silver{
+	width: 400px;
+	height: 450px;
+	position: relative;
+	user-select:none;
+	border-radius: 50%;
+}
+
+#gold{
+	width: 400px;
+	height: 450px;
+	position: relative;
+	user-select:none;
+	border-radius: 50%;
+}
+
+#platinum{
+	width: 400px;
+	height: 450px;
+	position: relative;
+	user-select:none;
+	border-radius: 50%;
+}
+
+#disclaimer{
+	
+	font-family: 'Brush Script MT', cursive;
+	color: #8B0000;
+	Font-size: 35px;
+	text-align: center;
+	padding: 20px 20px;
+	text-shadow: 1px 1px black;
 }
